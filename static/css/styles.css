@@ -1,0 +1,411 @@
+/*FONTS*/
+@font-face {
+    font-family: 'sinthyaregular';
+    src: url('../fonts/sinthya-webfont.woff2') format('woff2'),
+         url('../fonts/sinthya-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'yessicaregular';
+    src: url('../fonts/yessica-regular-webfont.woff2') format('woff2'),
+         url('../fonts/yessica-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ @font-face {
+    font-family: 'Pragmatica ExtraLight Reg';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Pragmatica ExtraLight Reg'), url('../fonts/Pragmatica-ExtraLight.woff') format('woff');
+    }
+
+    @font-face {
+    font-family: 'freesansbold';
+    src: url('../fonts/freesansbold-webfont.woff2') format('woff2'),
+         url('../fonts/freesansbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+    /*NAVIGATION BAR*/
+#navbar1 {
+   float: none;
+   text-align: center;
+   justify-content: center;
+   display: block;
+   margin: 0 auto;
+}
+
+.nav-link {
+    color: white;
+    font-family: 'sinthyaregular';
+    padding-top: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+ul.nav a:hover { 
+    color: #026171  !important; 
+}
+
+#initiallogo {
+    font-family: 'yessicaregular';
+    font-size: 40px;
+    color: #B40202;
+    padding-left: 30px;
+    padding-right: 26px;
+    padding-top: 0px;
+}
+
+/*HOMEPAGE HEADINGS*/
+
+.title-container {
+     display: flex;
+  text-align: center;
+  align-items: center; 
+  padding-top: 20px;
+  padding-bottom: 20px; 
+}
+
+#harriet {
+    font-family: 'yessicaregular' ;
+    font-size: 150px;
+    color: #B40202 ;
+ text-shadow: 15px 10px 10px darkslategrey; 
+ padding-top: 80px;
+}
+
+#frontdeveloper {
+    font-family: 'sinthyaregular';
+  font-size: 60px;
+  margin: 0;
+  color: #343434;
+}
+
+#darley {
+font-family: 'yessicaregular' ;
+    font-size: 150px;
+    color: #B40202 ;
+     text-shadow: 15px 10px 10px darkslategrey; 
+}
+    
+
+/*HOMEPAGE BACKGROUND*/
+
+header {
+    background-image: url("../images/background.abstract.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    max-width: 100%;
+}
+
+/*ABOUTUS*/
+
+.about-us-container {
+    background-color: #EDEDED;
+}
+
+.about-us-box {
+    background-color: #EDEDED;
+}
+
+.ml2 {
+    font-family: 'yessicaregular';
+    font-size: 100px;
+    color: #343434 ;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+#computerimage {
+    float: left;
+    opacity: 40%;
+     width: 500px;
+     height: 300px ;
+}
+
+#computertextdiv {
+    position: relative;
+    display: inline-block;
+}
+
+.centered {
+    position: absolute;
+  color:#B40202;
+  font-family: 'freesansbold';
+  font-size: 65px;
+  z-index: 999;
+}
+
+#hellopara {
+    text-align: center;
+    color: white;
+    font-family: 'Pragmatica ExtraLight Reg';
+    font-size: 20px;
+   padding: 80px 40px;
+}
+
+#hellodiv{
+    background-color: #026171;
+    float: right;
+    width: 45%;
+    height: 66%;
+    right: 0px;
+    margin-right: 5%;
+}
+
+/*SKILLS*/
+
+#skillsdiv {
+    max-width: 100%;
+    height: 300px;
+    background-color: #BFC9CB;
+    margin: 20px;
+}
+
+#skillsheading {
+    color: #B40202;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'freesansbold';
+    text-decoration: underline; 
+    text-underline-position: under;
+    text-decoration-color: white;
+}
+
+/*ICONS*/
+
+#skillsicons {
+    align-content: center;
+    text-align: center;
+}
+
+#html-icon {
+    padding-top: 13px;
+}
+
+#html-circle
+{
+  width:100px;
+  height:100px;
+  background-color: white;
+  border-radius:100%;
+  margin-top: 40px;
+  margin-left: -75px;
+ }
+
+ #html-caption {
+     margin-left: -125px;
+ }
+
+#css-icon {
+    padding-top: 13px;
+}
+
+#css-circle {
+     width:100px;
+  height:100px;
+  background-color: white;
+  border-radius:100%;
+  margin-top: 40px;
+  margin-left: -30px;
+}
+
+#css-caption {
+    margin-left: -40px;
+}
+
+#java-icon {
+    padding-top: 13px;
+    border-radius: 100%;
+}
+
+#java-circle {
+   width:100px;
+  height:100px;
+  background-color: white;
+  border-radius:100%;
+  margin-top: 40px;
+  margin-left: 15px; 
+}
+
+#java-caption {
+    margin-left: 25px;
+}
+
+#boot-icon {
+    padding-top: 13px;
+}
+
+#boot-circle {
+  width:100px;
+  height:100px;
+  background-color: white;
+  border-radius:100%;
+  margin-top: 40px;
+  margin-left: 60px;   
+}
+
+#boot-caption {
+    margin-left: 75px;
+}
+
+.icons {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+}
+
+.iconcaption {
+    font-family: 'Pragmatica ExtraLight Reg' ;
+    color: #707070 ;
+    font-size: 18px;
+}
+
+/*EXPERIENCE*/
+.experience-container {
+    background-color: #EDEDED;
+}
+
+.employmentdivs {
+    height: 300px;
+    width: 275px;
+    background-color: #026171;
+    border: thick solid #B40202; 
+    text-align: center;
+
+}
+   
+#employment {
+    font-family: 'freesansbold';
+    font-size: 35px;
+    line-height: 300px;
+color: white;
+}
+
+#soupdiv {
+   height: 300px;
+    width: 275px; 
+    background-color: #BFC9CB;  
+    text-align: center;
+}
+
+/*EDUCATION*/
+.education-container {
+   background-color: #EDEDED; 
+}
+
+/*FORMS*/
+.contact-container {
+   background-color: #EDEDED;
+}
+
+.form-container {
+    background-color: #026171;
+    width: 45%;
+    height: 600px;
+    padding-top: 20px;
+    margin: 3%;
+    text-align: center;
+}
+
+#message {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'freesansbold' ;
+    margin-top: 20px;
+}
+
+.form-floating {
+    margin: 50px;
+}
+
+.label-text {
+    font-family:'Pragmatica ExtraLight Reg' ;
+    color: #343434;
+}
+
+#floatingTextarea2 {
+   background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;  
+  color: white;
+}
+
+#button {
+ background-color: #B40202;
+ border: 0;
+ font-family: 'Pragmatica ExtraLight Reg';
+ width: 100px;
+height: 40px;
+}
+
+/*INFORMATION*/
+
+.info-wrapper {
+    float: right;
+     width: 45%;
+    height: 600px;
+    padding-top: 20px;
+    margin: 3%;
+    background-color: #BFC9CB;
+}
+
+.infotext {
+    color: #B40202;
+    font-family: 'freesansbold';
+    padding-left: 75px;
+    font-size: 20px;
+}
+
+#arrowimage {
+    height: 10%;
+    width: 20%;
+}
+
+/*ICONS*/
+
+#media {
+    text-align: center;
+}
+
+.fa-linkedin {
+color: #026171;
+font-size: 75px;
+padding-top: 125px;
+}
+
+.fa-linkedin:hover {
+    color: #B40202; }
+
+.fa-github-square {
+    color: #026171;
+font-size: 75px;
+}
+
+.fa-github-square:hover {
+    color: #B40202;
+}
+
+.fa-twitter-square {
+    color: #026171;
+font-size: 75px;
+}
+
+.fa-twitter-square:hover {
+color: #B40202;}

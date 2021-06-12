@@ -120,6 +120,7 @@ header {
     font-family: 'yessicaregular';
     font-size: 100px;
     color: #343434 ;
+    padding: 50px 30px 0px 30px;
 }
 
 .ml2 .letter {
@@ -127,24 +128,24 @@ header {
   line-height: 1em;
 }
 
-#computerimage {
-    float: left;
-    opacity: 40%;
-     width: 500px;
-     height: 300px ;
+.description-container {
+margin: 0 30px;
+padding: 0;
 }
 
 #computertextdiv {
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images/57computer.jpg") no-repeat center / cover;
+    padding: 0;
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .centered {
-    position: absolute;
   color:#B40202;
   font-family: 'freesansbold';
   font-size: 65px;
-  z-index: 999;
 }
 
 #hellopara {
@@ -152,25 +153,37 @@ header {
     color: white;
     font-family: 'Pragmatica ExtraLight Reg';
     font-size: 20px;
-   padding: 80px 40px;
+    margin-bottom: 0;
 }
 
 #hellodiv{
     background-color: #026171;
-    float: right;
-    width: 45%;
-    height: 66%;
-    right: 0px;
-    margin-right: 5%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 40px;
+}
+
+#arrowimage {
+    height: 50px;
+    width: 100px;
+    top: 40%;
+    left: -55px;
+    position: absolute;
 }
 
 /*SKILLS*/
+
+.skills-container {
+    margin: 0 30px;
+}
 
 #skillsdiv {
     max-width: 100%;
     height: 300px;
     background-color: #BFC9CB;
-    margin: 20px;
+    padding: 0;
 }
 
 #skillsheading {
@@ -274,37 +287,128 @@ header {
 }
 
 /*EXPERIENCE*/
+
 .experience-container {
     background-color: #EDEDED;
 }
 
-.employmentdivs {
-    height: 300px;
-    width: 275px;
+#employmenttitlerow {
+    margin-bottom: 10px;
+}
+
+#employmentdiv {
+   text-align: center;
     background-color: #026171;
-    border: thick solid #B40202; 
-    text-align: center;
-
+    border: thick solid #B40202;
+    height: 100px;
 }
-   
-#employment {
+
+#employmenttext {
     font-family: 'freesansbold';
-    font-size: 35px;
-    line-height: 300px;
 color: white;
+line-height: 100px;
+font-size: 30px;
 }
 
-#soupdiv {
-   height: 300px;
-    width: 275px; 
+#employment1row { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+} 
+
+#workexperiencetitlerow {
+    margin-bottom: 10px;
+}
+
+#experiencetext {
+    font-family: 'freesansbold';
+color: white;
+font-size: 30px;
+line-height: 100px;
+}
+
+/*BOTH EXPERIENCE & EDUCATION*/
+
+.primarydescription {
     background-color: #BFC9CB;  
     text-align: center;
+    height: 300px;
 }
+
+.date {
+    font-family: 'Pragmatica ExtraLight Reg' ;
+    font-size: 17px;
+    color: #707070;
+    padding-top: 50px;
+}
+
+.title {
+    font-family: 'Pragmatica ExtraLight Reg' ;
+    font-size: 20px;
+    color: #707070;
+}
+
+.paragraph {
+    font-family: 'Pragmatica ExtraLight Reg' ;
+    font-size: 15px;
+    color: #707070;
+}
+
 
 /*EDUCATION*/
 .education-container {
    background-color: #EDEDED; 
 }
+
+#educationtitlerow {
+margin-bottom: 10px;
+}
+
+
+#coursesdiv {
+    text-align: center;
+    background-color: #026171;
+    border: thick solid #B40202;
+    height: 100px;
+}
+
+#education1row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#education2row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+#examinationsdiv {
+    text-align: center;
+    background-color: #026171;
+    border: thick solid #B40202;
+    height: 100px;
+}
+
+#courses{
+    font-family: 'freesansbold';
+color: white;
+line-height: 100px;
+font-size: 30px;
+}
+
+#examinations {
+    font-family: 'freesansbold';
+color: white;
+line-height: 100px;
+font-size: 30px;
+}
+
 
 /*FORMS*/
 .contact-container {
@@ -312,20 +416,21 @@ color: white;
 }
 
 .form-container {
+    margin: 0 30px;
+padding: 0;
+}
+
+#forminformation {
     background-color: #026171;
-    width: 45%;
-    height: 600px;
-    padding-top: 20px;
-    margin: 3%;
-    text-align: center;
+   padding: 0; 
+   text-align: center;
 }
 
 #message {
-    text-align: center;
     color: white;
     font-size: 20px;
     font-family: 'freesansbold' ;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .form-floating {
@@ -353,29 +458,29 @@ color: white;
  font-family: 'Pragmatica ExtraLight Reg';
  width: 100px;
 height: 40px;
+margin-bottom: 50px;
 }
 
 /*INFORMATION*/
 
-.info-wrapper {
-    float: right;
-     width: 45%;
-    height: 600px;
-    padding-top: 20px;
-    margin: 3%;
+#harrietdetails {
+    padding: 0;
     background-color: #BFC9CB;
 }
 
 .infotext {
     color: #B40202;
     font-family: 'freesansbold';
-    padding-left: 75px;
+    margin-top: 50px;
     font-size: 20px;
+    text-align: center;
 }
 
-#arrowimage {
-    height: 10%;
-    width: 20%;
+#arrowimage2 {
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    left: 2px;
 }
 
 /*ICONS*/
@@ -409,3 +514,39 @@ font-size: 75px;
 
 .fa-twitter-square:hover {
 color: #B40202;}
+
+.footer {
+    text-align: center;
+    background-color: #707070;
+    margin: 0 30px;
+}
+
+#footertext {
+    font-family: 'Pragmatica ExtraLight Reg';
+    color: white;
+}
+
+#footercontainer {
+   background-color: #EDEDED; 
+   margin-bottom: 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  .description-container,
+  .skills-container {
+    margin: 0;
+  }
+  #computertextdiv,
+  #hellodiv,
+  #skillsdiv {
+    height: 300px;
+  }
+  #arrowimage {
+    top: 30px;
+    left: 35px;
+  }
+  .container-fluid {
+    padding: 0;
+  }
+}

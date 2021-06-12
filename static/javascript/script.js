@@ -1,8 +1,12 @@
-// Wrap every letter in a span
-//ABOUT US HEADING
-
-var textWrapper = document.querySelector('.ml2');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+// Get all the elements with the .ml2 class
+var textWrapper = document.querySelectorAll('.ml2');
+// Loop over the textWrapper array and apply the animation effect to each element in it
+textWrapper.forEach(el => {
+    el.innerHTML = el.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+    );
+});
 
 anime.timeline({ loop: true })
     .add({

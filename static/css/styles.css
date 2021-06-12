@@ -33,6 +33,17 @@
 }
 
     /*NAVIGATION BAR*/
+.navigation-container {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
 #navbar1 {
    float: none;
    text-align: center;
@@ -199,85 +210,44 @@ padding: 0;
 /*ICONS*/
 
 #skillsicons {
-    align-content: center;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 #html-icon {
     padding-top: 13px;
 }
 
-#html-circle
-{
-  width:100px;
-  height:100px;
-  background-color: white;
-  border-radius:100%;
-  margin-top: 40px;
-  margin-left: -75px;
- }
+.icon-circle {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 100%;
+}
 
- #html-caption {
-     margin-left: -125px;
- }
 
 #css-icon {
     padding-top: 13px;
 }
 
-#css-circle {
-     width:100px;
-  height:100px;
-  background-color: white;
-  border-radius:100%;
-  margin-top: 40px;
-  margin-left: -30px;
-}
-
-#css-caption {
-    margin-left: -40px;
-}
 
 #java-icon {
     padding-top: 13px;
     border-radius: 100%;
 }
 
-#java-circle {
-   width:100px;
-  height:100px;
-  background-color: white;
-  border-radius:100%;
-  margin-top: 40px;
-  margin-left: 15px; 
-}
-
-#java-caption {
-    margin-left: 25px;
-}
 
 #boot-icon {
     padding-top: 13px;
 }
 
-#boot-circle {
-  width:100px;
-  height:100px;
-  background-color: white;
-  border-radius:100%;
-  margin-top: 40px;
-  margin-left: 60px;   
-}
-
-#boot-caption {
-    margin-left: 75px;
-}
 
 .icons {
     vertical-align: top;
     display: inline-block;
     text-align: center;
-    width: 80px;
+    margin: 0 15px;
 }
 
 .iconcaption {
@@ -287,9 +257,18 @@ padding: 0;
 }
 
 /*EXPERIENCE*/
+.row {
+    --bs-gutter-x: 0;
+}
 
 .experience-container {
     background-color: #EDEDED;
+}
+
+.details-container {
+    background-color: #EDEDED;
+    margin: 0 30px;
+    width: unset;
 }
 
 #employmenttitlerow {
@@ -311,14 +290,20 @@ font-size: 30px;
 }
 
 #employment1row { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
 } 
 
 #workexperiencetitlerow {
     margin-bottom: 10px;
+}
+
+#experience1row {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
 }
 
 #experiencetext {
@@ -333,7 +318,6 @@ line-height: 100px;
 .primarydescription {
     background-color: #BFC9CB;  
     text-align: center;
-    height: 300px;
 }
 
 .date {
@@ -357,8 +341,9 @@ line-height: 100px;
 
 
 /*EDUCATION*/
+
 .education-container {
-   background-color: #EDEDED; 
+    background-color: #EDEDED;
 }
 
 #educationtitlerow {
@@ -374,19 +359,21 @@ margin-bottom: 10px;
 }
 
 #education1row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+      margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
 }
 
 #education2row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
 }
 
+#examstitlerow {
+    margin-bottom: 10px;
+}
 
 #examinationsdiv {
     text-align: center;
@@ -533,20 +520,79 @@ color: #B40202;}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
+.nav-link {
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+    #harriet {
+    font-size: 80px;
+}
+
+#frontdeveloper {
+  font-size: 30px;
+}
+
+#darley {
+    font-size: 80px; 
+}
+
+.ml2 {
+    font-size: 50px;
+    padding: 0;
+}
+
   .description-container,
   .skills-container {
     margin: 0;
   }
+
   #computertextdiv,
-  #hellodiv,
-  #skillsdiv {
+  #hellodiv {
     height: 300px;
   }
-  #arrowimage {
-    top: 30px;
-    left: 35px;
+
+  #skillsdiv {
+      height: 350px;
   }
+
+  #arrowimage {
+    display: none;
+  }
+
   .container-fluid {
     padding: 0;
   }
+
+  .details-container {
+      margin: 0;
+  }
+
+  .infotext {
+      font-size: 15px;
+  }
+
+  #employment1row,
+  #experience1row,
+  #education1row,
+  #education2row
+ {
+      grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 406px) {
+ #initiallogo {
+    padding-left: 0px;
+    padding-right: 0px;
+}   
+.nav-link {
+    font-size: 10px;
+}
+}
+
+@media screen and (max-height: 586px) and (min-width: 771px) {
+#harriet {
+    padding-top: 0;
+}
 }

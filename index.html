@@ -19,29 +19,31 @@
 
 <body id="home">
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-sm fixed-top navbar-light navbar-center nav-fill">
-        <div class="container">
-            <div class="collapse navbar-collapse" id="navbar1">
-                <ul class="nav justify-content-center">
-                    <li class=" nav-item">
-                        <a class="nav-link scroll-link" href="#top-content">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link scroll-link" href="#about-me">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <p id="initiallogo">HD</p>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link scroll-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link scroll-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+    <div class="navigation-container">
+        <nav class="navbar navbar-expand-sm fixed-top navbar-light navbar-center nav-fill">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="nav justify-content-center">
+                        <li class=" nav-item">
+                            <a class="nav-link scroll-link" href="#top-content">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#about-me">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <p id="initiallogo">HD</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
     <!--FIRST PAGE-->
     <header class="top-content" id="top-content">
@@ -91,29 +93,33 @@
                 <div id="skillsdiv" class="col">
                     <p id="skillsheading">SKILLS</p>
                     <div id="skillsicons">
-                        <div class="icons">
-                            <div id="html-circle">
-                                <img src="https://img.icons8.com/color/80/000000/html-5--v1.png" id="html-icon" />
+                        <div class="skills-section">
+                            <div class="icons">
+                                <div class="icon-circle">
+                                    <img src="https://img.icons8.com/color/80/000000/html-5--v1.png" id="html-icon" />
+                                </div>
+                                <span class="iconcaption">HTML5</span>
                             </div>
-                            <span class="iconcaption" id="html-caption">HTML5</span>
+                            <div class="icons">
+                                <div class="icon-circle">
+                                    <img src="https://img.icons8.com/color/80/4a90e2/css3.png" id="css-icon" />
+                                </div>
+                                <span class="iconcaption">CSS3</span>
+                            </div>
                         </div>
-                        <div class="icons">
-                            <div id="css-circle">
-                                <img src="https://img.icons8.com/color/80/4a90e2/css3.png" id="css-icon" />
+                        <div class="skills-section">
+                            <div class="icons">
+                                <div class="icon-circle">
+                                    <img src="https://img.icons8.com/color/80/000000/javascript.png" id="java-icon" />
+                                </div>
+                                <span class="iconcaption">JavaScript</span>
                             </div>
-                            <span class="iconcaption" id="css-caption">CSS3</span>
-                        </div>
-                        <div class="icons">
-                            <div id="java-circle">
-                                <img src="https://img.icons8.com/color/80/000000/javascript.png" id="java-icon" />
+                            <div class="icons">
+                                <div class="icon-circle">
+                                    <img src="https://img.icons8.com/color/80/000000/bootstrap.png" id="boot-icon" />
+                                </div>
+                                <span class="iconcaption">Bootstrap</span>
                             </div>
-                            <span class="iconcaption" id="java-caption">JavaScript</span>
-                        </div>
-                        <div class="icons">
-                            <div id="boot-circle">
-                                <img src="https://img.icons8.com/color/80/000000/bootstrap.png" id="boot-icon" />
-                            </div>
-                            <span class="iconcaption" id="boot-caption">Bootstrap</span>
                         </div>
                     </div>
                 </div>
@@ -122,19 +128,19 @@
     </div>
 
     <!--THIRD PAGE EXPERIENCE -->
-    <div class="experience-container" id="experience">
-        <div class="experience-box-text" id="experience">
+    <div class="experience-container">
+        <div class="experience-box-text">
             <p class="ml2" id="experience-text">Experience</p>
         </div>
 
-        <div class="container" id="employment-container">
+        <div class="container-fluid details-container">
             <div class="row" id="employmenttitlerow">
                 <div class="col" id="employmentdiv">
                     <p id="employmenttext">EMPLOYMENT</p>
                 </div>
             </div>
             <div class="row" id="employment1row">
-                <div class="col-12 col-md-3 primarydescription">
+                <div class="primarydescription">
                     <p class="date">January 2021-Present</p>
                     <p class="title">The Delicious Soup Kitchen</p>
                     <p class="paragraph">I developed & started my own soup
@@ -144,32 +150,32 @@
                         social media & a purposed-built
                         website which I designed.</p>
                 </div>
-                <div class="col-12 col-md-3 primarydescription">
+                <div class="primarydescription">
                     <p class="date">July 2020-Present</p>
                     <p class="title">R. Coy. Farmers</p>
                     <p class="paragraph">Working on a farm, helping with crop control.</p>
                 </div>
 
-                <div class="col-12 col-md-3 primarydescription">
+                <div class="primarydescription">
                     <p class="date">April 2021-Present</p>
                     <p class="title">Serve Legal</p>
                     <p class="paragraph">ID testing age-restricted products.</p>
                 </div>
-                <div class="col-12 col-md-3 primarydescription">
+                <div class="primarydescription">
                     <p class="date">June 2020</p>
                     <p class="title">Consuma Paper Products</p>
                     <p class="paragraph">Working on a tissue production line.</p>
                 </div>
             </div>
         </div>
-        <div class="container" id="workexperience-container">
+        <div class="container-fluid details-container">
             <div class="row" id="workexperiencetitlerow">
                 <div class="col" id="employmentdiv">
                     <p id="experiencetext">WORK EXPERIENCE</p>
                 </div>
             </div>
             <div class="row" id="experience1row">
-                <div class="col-12 col-md-6 primarydescription">
+                <div class="primarydescription">
                     <p class="date">August 2018</p>
                     <p class="title">CGA Personel <br> Job Recruitment</p>
                     <p class="paragraph">My time there involved reading through
@@ -177,7 +183,7 @@
                         vacancies, filing paperwork and working
                         on and designing advertising campaigns.</p>
                 </div>
-                <div class=" col-12 col-md-6 primarydescription">
+                <div class="primarydescription">
                     <p class="date">February 2019</p>
                     <p class="title">BayTree PR <br> Marketing & Public Relations</p>
                     <p class="paragraph">I assisted the owner of the company by
@@ -197,14 +203,14 @@
         <div class="education-box-text">
             <p class="ml2">Education</p>
         </div>
-        <div class="container" id="courses-container">
+        <div class="container-fluid details-container">
             <div class="row" id="educationtitlerow">
                 <div class="col" id="coursesdiv">
                     <p id="courses">COURSES</p>
                 </div>
             </div>
             <div class="row" id="education1row">
-                <div class="col-12 col-md-4 primarydescription">
+                <div class="primarydescription">
                     <p class="date">May 2021-Present</p>
                     <p class="title">Front End Development<br>The Learning People</p>
                     <p class="paragraph">A programme accredited by Microsoft
@@ -212,13 +218,13 @@
                         Javascript, Python incl. frameworks and
                         version control.</p>
                 </div>
-                <div class=" col-12 col-md-4 primarydescription">
+                <div class="primarydescription">
                     <p class="date">March 2021</p>
                     <p class="title">SheCodes Basics<br>SheCodes</p>
                     <p class="paragraph">Building knowledge of HTML, CSS,
                         JavaScript & Editor.</p>
                 </div>
-                <div class=" col-12 col-md-4 primarydescription">
+                <div class="primarydescription">
                     <p class="date">December 2018</p>
                     <p class="title">Orchards Cookery<br>Orchards Cookery School</p>
                     <p class="paragraph">Intensive Cookery Course.</p>
@@ -226,21 +232,21 @@
             </div>
         </div>
 
-        <div class="container" id="exams-container">
+        <div class="container-fluid details-container">
             <div class="row" id="examstitlerow">
                 <div class="col" id="examinationsdiv">
                     <p id="examinations">EXAMINATIONS</p>
                 </div>
             </div>
             <div class="row" id="education2row">
-                <div class="col-12 col-md-6 primarydescription">
+                <div class="primarydescription">
                     <p class="date">2018-2020</p>
                     <p class="title">A Levels <br> Oundle School</p>
                     <p class="paragraph">English: D3 (A) <br>
                         Economics: A <br>
                         Politics: A</p>
                 </div>
-                <div class=" col-12 col-md-6 primarydescription">
+                <div class="primarydescription">
                     <p class="date">2015-2018</p>
                     <p class="title">GCSE<br>Oundle School</p>
                     <p class="paragraph">Science (Triple Award): A*A*A; Maths: 8; English Language: 9; English
@@ -249,6 +255,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
 

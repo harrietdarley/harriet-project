@@ -1,3 +1,4 @@
+//Text Animation https://tobiasahlin.com
 // Get all the elements with the .ml2 class
 var textWrapper = document.querySelectorAll('.ml2');
 // Loop over the textWrapper array and apply the animation effect to each element in it

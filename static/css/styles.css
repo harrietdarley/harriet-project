@@ -598,13 +598,24 @@ color: #B40202;}
 }
 }
 
-@media screen and (max-height: 586px) and (min-width: 771px) {
+
+@media screen and (max-width: 528px) {
+#skillsdiv {
+    height: 420px;
+    text-align: center;
+}
+
+.icon-circle {
+    margin-top: 10px;
+}
+}
+
+@media screen and (max-width: 340px) {
 #harriet {
-    padding: 0;
-    font-size: 100px;
+    font-size: 70px;
 }
 
 #darley {
-    font-size: 100px;
+    font-size: 70px;
 }
 }

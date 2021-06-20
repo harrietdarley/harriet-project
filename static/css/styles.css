@@ -58,10 +58,16 @@
     padding-top: 15px;
     font-size: 20px;
     letter-spacing: 2px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 ul.nav a:hover { 
     color: #026171  !important; 
+}
+
+ul {
+    align-items: center;
 }
 
 #initiallogo {
@@ -71,6 +77,7 @@ ul.nav a:hover {
     padding-left: 30px;
     padding-right: 26px;
     padding-top: 0px;
+    margin: 0;
 }
 
 /*HOMEPAGE HEADINGS*/
@@ -277,7 +284,7 @@ padding: 0;
     margin-bottom: 10px;
 }
 
-#employmentdiv {
+.employmentdiv {
    text-align: center;
     background-color: #026171;
     border: thick solid #B40202;
@@ -527,22 +534,6 @@ color: #B40202;}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
-.nav-link {
-    font-size: 15px;
-    letter-spacing: 0;
-}
-
-    #harriet {
-    font-size: 80px;
-}
-
-#frontdeveloper {
-  font-size: 30px;
-}
-
-#darley {
-    font-size: 80px; 
-}
 
 .ml2 {
     font-size: 50px;
@@ -588,16 +579,24 @@ color: #B40202;}
   }
 }
 
-@media screen and (max-width: 406px) {
- #initiallogo {
-    padding-left: 0px;
-    padding-right: 0px;
-}   
+@media screen and (max-width: 615px) {
 .nav-link {
-    font-size: 10px;
-}
+    font-size: 15px;
+    letter-spacing: 0;
 }
 
+    #harriet {
+    font-size: 90px;
+}
+
+#frontdeveloper {
+  font-size: 40px;
+}
+
+#darley {
+    font-size: 90px; 
+}
+}
 
 @media screen and (max-width: 528px) {
 #skillsdiv {
@@ -609,6 +608,17 @@ color: #B40202;}
     margin-top: 10px;
 }
 }
+
+@media screen and (max-width: 416px) {
+ #initiallogo {
+    padding-left: 0px;
+    padding-right: 0px;
+}   
+.nav-link {
+    font-size: 10px;
+}
+}
+
 
 @media screen and (max-width: 340px) {
 #harriet {

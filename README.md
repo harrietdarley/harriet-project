@@ -9,7 +9,7 @@ My website provides a detailed and informative list of my personal skills and ex
 
 ### User Stories 
 - As a potential recruiter, collaborater or other coder:
-    - I want to know the coder's experience and her current skills. 
+    - I want to know the coder's experience and their current skills. 
     - I want to be able to easily get in contact with the coder to find out more information, to hire them or collaborate with them. 
     - I want to visit the coder's social media pages. 
     - I want to be able to find out what the coder specialises in and what their personal style is. 
@@ -36,7 +36,7 @@ I created my wireframes using Abode XD, I displayed two different aspects; one f
 - **Experience Boxes**: To present my employment, work experience and education, I have used boxes which include the date, a title and a description. 
 
 #### Contact Page 
-- **Form with Submit Button**: Allows the users to contact me by completing the form and submitting their required details. They can get in touch to collaborate, recruit me or to find out about my code. When they click the "Send" button, the form will be submitted through Form Spree and a Thank You message is displayed. Their details and message will be emailed to me so I can reply to their email address.
+- **Form with Submit Button**: Allows the user to contact me by completing the form and submitting their required details. They can get in touch to collaborate, recruit me or to find out about my code. When they click the "Send" button, the form will be submitted through Form Spree and a Thank You message is displayed. Their details and message will be emailed to me so I can reply to their email address.
     - **Form Boxes**: Form boxes are required so user must fill out all details. 
 - **Social Links**: When the user clicks on each of the social media icons, my GitHub, Linkedin and Twitter pages will be displayed in another tab. 
 - **Footer**: The footer shows that I am the owner of the website. 
@@ -91,7 +91,28 @@ I used the [W3C HTML Validator tool](https://validator.w3.org/#validate_by_input
 - **Animated Titles**: The JavaScript only worked on one title so I struggles with editing the JavaScript so it moved the letters on all the titles across the website. 
 - **Experience Boxes**: I first tried using Bootstrap grid system to position my boxes however this was not working as I could not get the right spacing between the columns, I asked my mentor and he told me to look at using Flexbox which eventually positioned them perfectly. 
 - **Computer Image**: The opacity property was not working on my image however I found out the linear-gradient property made background images opaque as it adds a layer over the image. 
-_ **GitHub**: I didn't push my code upto GitHub enough times as I needed to however luckily this didn't affect my project. 
+_ **GitHub**: I didn't push my code upto GitHub enough times however luckily this didn't affect my project. 
+
+## Deployment
+
+I used GitHub Pages as a hosting platform for my project. I did the following steps to deploy my website to GitHub Pages: 
+
+1. Opened a new terminal window in my Visual Studio Code workspace. 
+2. Used the 'git init' command to initialise the Git. 
+3. Used the 'git add .' command to add all files to Git. 
+4. Used the 'git commit -m "Initial Commit"' command to commit all the files to Git.
+5. Created a new repository called 'harriet-project' in GitHub. 
+6. Used the 'git remote add origin https://harrietdarley.github.io/harriet-project.git' command to add the remote origin to my local Git repository. 
+7. Used the 'git push -u origin master' command and entered my GitHub username and password to push the files to GitHub. 
+8. In GitHub, I selected the 'master branch' option in 'Settings' on my repository page under the 'GitHub Pages' selection. 
+
+### Repository Link 
+
+https://harrietdarley.github.io/harriet-project/
+
+### Running Code Locally 
+
+Users can run my code locally by downloading a local copy of my code to their desktop by going to my GitHub repository. 
 
 ## Credits 
 
